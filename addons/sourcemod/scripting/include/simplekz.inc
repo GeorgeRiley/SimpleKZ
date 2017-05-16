@@ -86,11 +86,59 @@ stock bool IsValidClient(int client)
 }
 
 /**
+ * Returns the lesser of two integer values.
+ *
+ * @param value1		First value.
+ * @param value2		Second value.
+ * @return				Lesser value.
+ */
+stock int IntMin(int value1, int value2)
+{
+	if (value1 <= value2)
+	{
+		return value1;
+	}
+	return value2;
+}
+
+/**
+ * Returns the greater of two integer values.
+ *
+ * @param value1		First value.
+ * @param value2		Second value.
+ * @return				Greater value.
+ */
+stock int IntMax(int value1, int value2)
+{
+	if (value1 >= value2)
+	{
+		return value1;
+	}
+	return value2;
+}
+
+/**
+ * Returns the lesser of two float values.
+ *
+ * @param value1		First value.
+ * @param value2		Second value.
+ * @return				Lesser value.
+ */
+stock float FloatMin(float value1, float value2)
+{
+	if (value1 <= value2)
+	{
+		return value1;
+	}
+	return value2;
+}
+
+/**
  * Returns the greater of two float values.
  *
  * @param value1		First value.
  * @param value2		Second value.
- * @return				Greatest value.
+ * @return				Greater value.
  */
 stock float FloatMax(float value1, float value2)
 {
